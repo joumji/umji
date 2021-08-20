@@ -1,0 +1,138 @@
+/* header.css */
+
+#main_header{
+	position: fixed;
+	z-index: 500;
+	width: 100%; height: 80px; 
+	box-sizing: border-box;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 0.5);
+			
+}
+@media screen and (max-width: 1366px){
+#main_header{
+	height: 100px;
+	background: rgba(255, 255, 255, 0.6);
+}
+}
+
+@media screen and (max-width: 767px){
+#main_header{
+	height: 70px;
+	background: rgba(255, 255, 255, 0.6);
+}
+}
+	#logo{
+		position: absolute;
+		left: 2%; top:25px;
+		font-size: 20px;
+		font-weight: 700;
+	}
+	@media screen and (max-width: 1366px){
+	#logo{
+		top: 25px; 
+	}
+	}
+	@media screen and (max-width: 767px){
+	#logo{
+		top: 20px; left:20px;
+	}
+	}
+
+	#main_nav{
+		position: absolute;
+		left: 30%; top: 48px	
+	}
+
+	@media screen and (max-width: 1396px){
+	#main_nav{
+		position: relative; top: 60px; right: 50%;
+		margin-right: -590px;
+	}
+	}
+	@media screen and (max-width: 1200px){
+	#main_nav{
+		display: none;
+	}
+	}
+		#main_nav > ul{
+			height: 20px; width: 1200px;
+		}
+			#main_nav > ul > li{ 
+				height: 20px; float: left;
+				margin-left: 4.92%;
+			}
+			@media screen and (max-width: 1396px){
+			#main_nav > ul > li:first-child{ 
+				margin-left: 0;
+			}
+			}
+					#main_nav h3{
+						position: relative; top: -20px;
+						cursor: pointer;
+						font-weight: 500;
+					}
+
+						#main_nav h3 > a{
+							color:#FFFFFF;
+						}
+
+	label.toggle_menu{ display: none;}
+
+@media screen and (max-width: 1200px){
+#main_header > label.toggle_menu{
+	position: relative;
+	top: 20px; right: 5%;
+	display: block;
+	height: 40px; width: 40px;
+	background: url(../images/toggle_menu.png) no-repeat;
+	background-size: 100%;
+	float: right;
+	text-indent: -6000px; overflow: hidden;
+	transition-duration: 0.3s;
+	
+}
+}
+@media screen and (max-width: 767px){
+#main_header > label.toggle_menu{
+	top: 15px;
+}
+}
+
+input#toggle_menu:checked + #wrap > #main_header > label.toggle_menu{
+	background-image: url(../images/cancel.png);
+}
+
+input#toggle_menu + #wrap > #toggle_nav{
+	position: fixed;
+	top: 100px;
+	width: 100%;
+	height: 0; 
+	overflow: hidden;
+	transition-duration: 0.3s;
+	
+}
+@media screen and (max-width: 767px){
+input#toggle_menu + #wrap > #toggle_nav{
+	top: 70px;
+	
+}
+}
+
+input#toggle_menu:checked + #wrap > #toggle_nav{
+	position: fixed;
+	z-index: 500;
+	display: block;
+	height: 357px;
+}
+	#nav{ width: 100%; height: 357px;}
+		#nav > ul{ width: 100%; height: 357px;}
+			#nav > ul > li{
+				width: 100%;
+				height: 80px;
+				line-height: 49px;
+				text-align: center;
+				font-size: 20px;
+				color: #fff;
+				background: rgba(255, 255, 255, 0.6);
+			}
