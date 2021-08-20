@@ -1,0 +1,123 @@
+/* common.css */
+/* Noto Sans KR (korean) http://www.google.com/fonts/earlyaccess */ 
+@font-face { 
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 100; 
+	src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype'); 
+}
+@font-face { 
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 300; 
+	src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype'); 
+}
+@font-face {
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 400; 
+	src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype'); 
+}
+@font-face { 
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 500; 
+	src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype'); 
+}
+@font-face { 
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 700; 
+	src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype'); 
+}
+@font-face { 
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 900; 
+	src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype'); 
+}
+
+html {
+	/* Prevent font scaling in landscape */
+
+	-webkit-text-size-adjust: none; /*Chrome, Safari, newer versions of Opera*/
+
+	-moz-text-size-adjust: none; /*Firefox*/
+
+	-ms-text-size-adjust: none;  /*Ie*/
+
+	-o-text-size-adjust: none; /*old versions of Opera*/
+
+}
+
+*{ 
+	margin: 0; 
+	padding: 0;
+}
+html, body{
+	font: 14px / normal 'Noto Sans KR'; 
+	color: #000;
+	
+}
+table, tr, th, td{
+	font: 14px / normal 'Noto Sans KR'; 
+	color: #000;
+	border-collapse: collapse;
+}
+input, select, option, textarea, button{
+	font: 14px / normal 'Noto Sans KR'; 
+	color: #000;
+	border: 0 none;
+	border-radius: 0; /*아이폰에서 둥글게 되는거 방지*/
+	box-shadow: 0;
+	background: #fff;
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6{
+	font-size: 1.0rem;
+	font-weight: normal;
+}
+strong, b{
+	font-weight: normal;
+}
+em, i, address{
+	font-style: normal;
+}
+img, iframe, frameset, fieldset{
+	border: 0 none;
+}
+ul, ol, li{
+	list-style: none;
+}
+img, a, label, iframe{
+	display: block;
+}
+hr, legend, caption{
+	display: none;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+/**** CLASS ****************/
+.blind, .skip{
+	display: block;
+	height: 0;
+	overflow: hidden;
+
+	position: absolute;
+	top: -6000px;
+}

@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>YOSIGO</title>
+<link rel="stylesheet" href="CSS/common.css" />
+<link rel="stylesheet" href="CSS/master.css" />
+<link rel="stylesheet" href="CSS/header.css" />
+<link rel="stylesheet" href="CSS/flexslider.css" />	
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/modernizr.js"></script>
+<script defer src="js/jquery.flexslider-min.js"></script>
+</head>
+<body>	
+<input id="toggle_menu" type="checkbox">
+	<div id="wrap">
+		<!-- 바로가기 -->
+		<div class="skip">
+			<a href="#">콘텐츠 바로가기</a>
+			<a href="#">메인메뉴 바로가기</a>
+			<a href="#">푸터 바로가기</a>
+		</div>
+
+		<!-- 헤더영역 -->
+		<header id="main_header">
+			<h1 id="logo"><a href="#">YOSIGO</a></h1>
+
+			<nav id="main_nav">
+				<h2 class="blind">메인메뉴</h2>
+				<ul>
+					<li id="nav_1">
+						<h3><a href="#personal">Personal</a></h3>
+					</li>
+
+					<li id="nav_2">
+						<h3><a href="#commercial">Commercial</a></h3>
+					</li>
+
+					<li id="nav_3">
+						<h3><a href ="#exhibitions">Exhibitions / Publications</a></h3>
+					</li>
+					
+					<li id="nav_4">
+						<h3><a href ="#lastwork">Last Work</a></h3>
+					</li>
+
+					<li id="nav_5">
+						<h3><a href ="#contact">Contact</a></h3>
+					</li>		
+				</ul>
+			</nav>
+
+			<label class="toggle_menu" for="toggle_menu">메뉴토글</label>
+		</header>
+		<!-- //헤더영역 끝 -->
+		
+		<!-- 토글용 메인메뉴 시작 -->
+		<nav id="toggle_nav">
+			<h2 class="blind">메인메뉴</h2>
+			
+			<div id="nav">
+				<ul>
+					<li><a href="#personal">Personal</a></li>
+					<li><a href="#commercial">Commercial</a></li>
+					<li><a href ="#exhibitions">Exhibitions / Publications</a></li>
+					<li><a href ="#lastwork">Last Work</a></li>
+					<li><a href ="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- //토글용 메인메뉴 끝 -->
+
+	<!-----flex slider------------------------------------------>
+	<script type="text/javascript">
+	    $(function(){
+	      SyntaxHighlighter.all();
+	    });
+	    $(window).load(function(){
+	      $('.flexslider').flexslider({
+	        animation: "slide",
+	        start: function(slider){
+	          $('body').removeClass('loading');
+	        }
+	      });
+	    });
+	</script>
+	<section class="slider">
+		<div class="flexslider">
+			 <ul class="slides">
+				<li>
+					<img class="pc" src="img/banner1.png" />
+				</li>
+				<li>
+					<img class="pc" src="img/banner2.png" />
+				</li>
+				<li>
+					<img class="pc" src="img/banner3.png" />
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- Syntax Highlighter -->
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+	<!-----flex slider end------------------------------------------>
+	
+	<div id="contents_wrap">	
+	<section id="personal">
+			<h1>Personal</h1>
+			<div class="personal">
+				<div>
+					<img src="images/a14-4-370x250.jpg" alt="Greetings From" />
+					<h3>Greetings From</h3>
+				</div>
+				<div>
+					<img src="images/a8-11-370x250.jpg" alt="Riu Avall" />
+					<h3>Riu Avall</h3>
+				</div>
+				<div>
+					<img src="images/IMG_8113-1-370x250.jpg" alt="Animal Turista" />
+					<h3>Animal Turista</h3>
+				</div>
+				<div>
+					<img src="images/315-370x250.jpg" alt="Mapa De Memoria" />
+					<h3>Mapa De Memoria</h3>
+				</div>
+				<div>
+					<img src="images/a1-3-370x250.jpg" alt="jai Alai" />
+					<h3>jai Alai</h3>
+				</div>
+				<div>
+					<img src="images/IMG_2328-370x250.jpg" alt="Kresala" />
+					<h3>Kresala</h3>
+				</div>
+			</div>
+		</section><!--//personal-->
+		
+		<section id="commercial">
+			<h1>Commercial</h1>
+			<div class="commercial">
+				<div>
+					<img src="images/82A5896-370x250.jpg" alt="AOO" />
+					<h3>AOO</h3>
+				</div>
+				<div>
+					<img src="images/a20-2-370x250.jpg" alt="Loreak Mendian" />
+					<h3>Loreak Mendian</h3>
+				</div>
+				<div>
+					<img src="images/07-370x250.jpg" alt="Villota" />
+					<h3>Villota</h3>
+				</div>
+				<div>
+					<img src="images/DSC1831-370x250.jpg" alt="Pullmantur" />
+					<h3>Pullmantur</h3>
+				</div>
+				<div>
+					<img src="images/a5-370x250.jpg" alt="Estrella Damm" />
+					<h3>Estrella Damm</h3>
+				</div>
+				<div>
+					<img src="images/nueve-7-370x250.jpg" alt="Santa & Cole" />
+					<h3>Santa & Cole</h3>
+				</div>
+			</div>
+		</section><!--//commercial-->
+		
+		<section id="exhibitions">
+			<h1>Exhibitions / Publications</h1>
+			<div class="exhibitions">
+				<div>
+					<img src="images/MG_5897-370x250.jpg" alt="Greetings From" />
+					<h3>Greetings From</h3>
+				</div>
+				<div>
+					<img src="images/1-_MG_6027-370x250.jpg" alt="Ultims Anys" />
+					<h3>Ultims Anys</h3>
+				</div>
+				<div>
+					<img src="images/camisa-1-370x250.jpg" alt="Riu Avall" />
+					<h3>Riu Avall</h3>
+				</div>
+				<div>
+					<img src="images/yosigo-mapa-de-memoria-03-370x250.jpg" alt="Mapa De Memoria" />
+					<h3>Mapa De Memoria</h3>
+				</div>
+				<div>
+					<img src="images/0-IMG_0372-370x250.jpg" alt="Kresala" />
+					<h3>Kresala</h3>
+				</div>
+				<div class="t_center">
+					<img src="images/nueve-7-370x250.jpg" alt="Azenurteak" />
+					<h3>Azenurteak</h3>
+				</div>
+			</div>
+		</section><!--//exhibitions / publications-->
+		
+		<section id="lastwork">
+			<h1>Last work</h1>
+			<div class="lastwork">
+				<div class="first">
+					<img src="images/DSC6386-768x512.jpg" alt="GCA Architects" />
+					<h3>GCA Architects</h3>
+				</div>
+				<div class="second">
+					<img src="images/DSC6242-370x555.jpg" alt="GCA Architects" />
+					<img src="images/DSC6276-200x300.jpg" alt="GCA Architects" />
+				</div>
+				<div class="last">
+					<img src="images/DSC6469-1024x683.jpg" alt="GCA Architects" />
+				</div>
+			</div>
+		</section><!--//lastwork-->
+		
+		<section id="contact">
+			<h1>Contact</h1>
+			<div class="contact">
+				<div class="info">
+					<p>Photographer Yosigo lives and works in your heart (also in Barcelona).</p>
+					<p>He travels around developing personal projects and comissions for different brands and clients.</p>
+				</div>
+				<div class="con">
+					<p>You can find me:</p>
+					<p><a href="mailto:info@yosigo.es">info@yosigo.es</a></p>
+					<p>(+34) 673 810 329</p>
+				</div>
+				<div class="sns">
+					<p><a href="https://www.instagram.com/yosigo_yosigo/" target="_blank">Instagram →</a></p>
+					<p><a href="https://www.facebook.com/yosigo" target="_blank">Facebook →</a></p>
+					<p><a href="https://yosigo-yosigo.tumblr.com" target="_blank">Tumblr →</a></p>
+				</div>
+			</div>
+		</section><!-- //contact  -->
+		</div>
+		
+		<footer id ="main_footer">
+			<p>© All rights reserved</p>
+		</footer>
+</div>	
+</body>
+</html>

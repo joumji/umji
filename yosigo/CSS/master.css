@@ -1,0 +1,22 @@
+/*master.css*/
+@import url(mainContents_style.css);
+
+/*** RESET ****************************************************/
+input#toggle_menu, input#toggle_search{
+	display: none;
+}
+
+body{
+	width: 100%;
+	background-color: aliceblue;
+}
+
+#wrap{
+	width: 100%;
+}
+
+#banner > img{
+	width: 100%;
+}
+
+
